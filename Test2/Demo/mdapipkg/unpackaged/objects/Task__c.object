@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Expected_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Process__c</fullName>
+        <externalId>false</externalId>
+        <label>Process</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Task_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Resolved</fullName>
+                    <default>false</default>
+                    <label>Resolved</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Create Design</fullName>
+                    <default>false</default>
+                    <label>Create Design</label>
+                </value>
+                <value>
+                    <fullName>Self-Review Design</fullName>
+                    <default>false</default>
+                    <label>Self-Review Design</label>
+                </value>
+                <value>
+                    <fullName>Correct Design</fullName>
+                    <default>false</default>
+                    <label>Correct Design</label>
+                </value>
+                <value>
+                    <fullName>Review Design</fullName>
+                    <default>false</default>
+                    <label>Review Design</label>
+                </value>
+                <value>
+                    <fullName>Fixbug</fullName>
+                    <default>false</default>
+                    <label>Fixbug</label>
+                </value>
+                <value>
+                    <fullName>Read Design</fullName>
+                    <default>false</default>
+                    <label>Read Design</label>
+                </value>
+                <value>
+                    <fullName>Code</fullName>
+                    <default>false</default>
+                    <label>Code</label>
+                </value>
+                <value>
+                    <fullName>Self-Review Code</fullName>
+                    <default>false</default>
+                    <label>Self-Review Code</label>
+                </value>
+                <value>
+                    <fullName>Correct Code</fullName>
+                    <default>false</default>
+                    <label>Correct Code</label>
+                </value>
+                <value>
+                    <fullName>Review Code</fullName>
+                    <default>false</default>
+                    <label>Review Code</label>
+                </value>
+                <value>
+                    <fullName>Create testcase</fullName>
+                    <default>false</default>
+                    <label>Create testcase</label>
+                </value>
+                <value>
+                    <fullName>Self-Review testcase</fullName>
+                    <default>false</default>
+                    <label>Self-Review testcase</label>
+                </value>
+                <value>
+                    <fullName>Correct testcase</fullName>
+                    <default>false</default>
+                    <label>Correct testcase</label>
+                </value>
+                <value>
+                    <fullName>Review testcase</fullName>
+                    <default>false</default>
+                    <label>Review testcase</label>
+                </value>
+                <value>
+                    <fullName>Test</fullName>
+                    <default>false</default>
+                    <label>Test</label>
+                </value>
+                <value>
+                    <fullName>Re-test</fullName>
+                    <default>false</default>
+                    <label>Re-test</label>
+                </value>
+                <value>
+                    <fullName>Create Deploy Doc</fullName>
+                    <default>false</default>
+                    <label>Create Deploy Doc</label>
+                </value>
+                <value>
+                    <fullName>Self-Review Deploy Doc</fullName>
+                    <default>false</default>
+                    <label>Self-Review Deploy Doc</label>
+                </value>
+                <value>
+                    <fullName>Correct Deploy Doc</fullName>
+                    <default>false</default>
+                    <label>Correct Deploy Doc</label>
+                </value>
+                <value>
+                    <fullName>Review Deploy Doc</fullName>
+                    <default>false</default>
+                    <label>Review Deploy Doc</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Open</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Pending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Resolved</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Closed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <valueName>Create Design</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <valueName>Self-Review Design</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <valueName>Correct Design</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Design</controllingFieldValue>
+                <valueName>Review Design</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <valueName>Self-Review Code</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <valueName>Correct Code</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <valueName>Review Code</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <valueName>Test</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Investigate</controllingFieldValue>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <valueName>Re-test</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <valueName>Code</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <valueName>Create testcase</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <valueName>Self-Review testcase</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <valueName>Correct testcase</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Code</controllingFieldValue>
+                <controllingFieldValue>Test</controllingFieldValue>
+                <valueName>Review testcase</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Create Deploy Doc</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Self-Review Deploy Doc</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Correct Deploy Doc</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deploy</controllingFieldValue>
+                <valueName>Review Deploy Doc</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Task Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Design</fullName>
+                    <default>false</default>
+                    <label>Design</label>
+                </value>
+                <value>
+                    <fullName>Investigate</fullName>
+                    <default>false</default>
+                    <label>Investigate</label>
+                </value>
+                <value>
+                    <fullName>Code</fullName>
+                    <default>false</default>
+                    <label>Code</label>
+                </value>
+                <value>
+                    <fullName>Test</fullName>
+                    <default>false</default>
+                    <label>Test</label>
+                </value>
+                <value>
+                    <fullName>Deploy</fullName>
+                    <default>false</default>
+                    <label>Deploy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task_of_Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Task of Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Task of Project</relationshipLabel>
+        <relationshipName>Task_of_Project</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>sfID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>sfID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Task</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TSK{00000}</displayFormat>
+        <label>Task ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Tasks</pluralLabel>
+    <recordTypes>
+        <fullName>Code</fullName>
+        <active>false</active>
+        <label>Code</label>
+        <picklistValues>
+            <picklist>Process__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixbug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Task_Type__c</picklist>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deploy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Deploy</fullName>
+        <active>false</active>
+        <label>Deploy</label>
+        <picklistValues>
+            <picklist>Process__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixbug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Task_Type__c</picklist>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deploy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Design</fullName>
+        <active>true</active>
+        <label>Design</label>
+        <picklistValues>
+            <picklist>Process__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixbug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Task_Type__c</picklist>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deploy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fixbug</fullName>
+        <active>false</active>
+        <label>Fixbug</label>
+        <picklistValues>
+            <picklist>Process__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixbug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Task_Type__c</picklist>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deploy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Testcase</fullName>
+        <active>false</active>
+        <label>Testcase</label>
+        <picklistValues>
+            <picklist>Process__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixbug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Deploy Doc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Review testcase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Task_Type__c</picklist>
+            <values>
+                <fullName>Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deploy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tasks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual End Date --></label>
+        <name>Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Start Date --></label>
+        <name>Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected End Date --></label>
+        <name>Expected_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Start Date --></label>
+        <name>Expected_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process --></label>
+        <name>Process__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code</masterLabel>
+            <translation><!-- Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correct Code</masterLabel>
+            <translation><!-- Correct Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correct Deploy Doc</masterLabel>
+            <translation><!-- Correct Deploy Doc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correct Design</masterLabel>
+            <translation><!-- Correct Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correct testcase</masterLabel>
+            <translation><!-- Correct testcase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Deploy Doc</masterLabel>
+            <translation><!-- Create Deploy Doc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Design</masterLabel>
+            <translation><!-- Create Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create testcase</masterLabel>
+            <translation><!-- Create testcase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixbug</masterLabel>
+            <translation><!-- Fixbug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-test</masterLabel>
+            <translation><!-- Re-test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read Design</masterLabel>
+            <translation><!-- Read Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Code</masterLabel>
+            <translation><!-- Review Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Deploy Doc</masterLabel>
+            <translation><!-- Review Deploy Doc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Design</masterLabel>
+            <translation><!-- Review Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review testcase</masterLabel>
+            <translation><!-- Review testcase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Review Code</masterLabel>
+            <translation><!-- Self-Review Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Review Deploy Doc</masterLabel>
+            <translation><!-- Self-Review Deploy Doc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Review Design</masterLabel>
+            <translation><!-- Self-Review Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Review testcase</masterLabel>
+            <translation><!-- Self-Review testcase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Type --></label>
+        <name>Task_Type__c</name>
+        <picklistValues>
+            <masterLabel>Code</masterLabel>
+            <translation><!-- Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deploy</masterLabel>
+            <translation><!-- Deploy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investigate</masterLabel>
+            <translation><!-- Investigate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task of Project --></label>
+        <name>Task_of_Project__c</name>
+        <relationshipLabel><!-- Task of Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- sfID --></label>
+        <name>sfID__c</name>
+    </fields>
+    <layouts>
+        <layout>Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Code --></label>
+        <name>Code</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deploy --></label>
+        <name>Deploy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Design --></label>
+        <name>Design</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fixbug --></label>
+        <name>Fixbug</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Testcase --></label>
+        <name>Testcase</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

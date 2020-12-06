@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        <h1>Project's tasks: {totalTask}</h1>
+        <lightning-datatable
+            key-field="Id"
+            data={employeeTasks.data}
+            columns={columns}>
+            onrowselection={handleRowAction}
+        </lightning-datatable>
+    </lightning-card>
+</template>

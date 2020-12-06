@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Task__c</entityName>
+    <fieldName>Design_Process__c</fieldName>
+    <masterLabel>Design Process</masterLabel>
+    <recordTypeName>Design</recordTypeName>
+</PathAssistant>

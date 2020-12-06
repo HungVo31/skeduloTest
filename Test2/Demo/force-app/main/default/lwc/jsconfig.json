@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/bearLocation": [
+                "bearLocation/bearLocation.js"
+            ],
+            "c/bearSupervisor": [
+                "bearSupervisor/bearSupervisor.js"
+            ],
+            "c/helloWebComponent": [
+                "helloWebComponent/helloWebComponent.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/projectTaskList": [
+                "projectTaskList/projectTaskList.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/taskDetail": [
+                "taskDetail/taskDetail.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folder>My_Amazing_App</folder>
+    <masterLabel>My Amazing App</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>vothanhhung22@gmail.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+    <shares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>trailhead12.tkvqwt7lmieg.99jxw6ivz43q@example.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+</WaveApplication>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bear</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bears</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdate --></label>
+        <name>Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height (cm) --></label>
+        <name>Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Observations --></label>
+        <name>Observations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sex --></label>
+        <name>Sex__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supervisor --></label>
+        <name>Supervisor__c</name>
+        <relationshipLabel><!-- Bears --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weight (Kg) --></label>
+        <name>Weight__c</name>
+    </fields>
+    <layouts>
+        <layout>Bear Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
