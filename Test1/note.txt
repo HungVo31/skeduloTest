@@ -1,2 +1,3 @@
 Please go to Setup -> Object Manager -> Contact -> Triggers
 My solution is named "creatingNewContact_trg"
+I also copy the code to the file named "creatingNewContact_trg.docx"
