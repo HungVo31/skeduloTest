@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<WaveRecipe xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <content xsi:nil="true"/>
-    <dataflow>North_America_Sales</dataflow>
-    <masterLabel>North America Sales</masterLabel>
-    <targetDatasetAlias>North_America_Sales</targetDatasetAlias>
-</WaveRecipe>

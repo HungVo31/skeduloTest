@@ -1,1 +1,0 @@
-{"nodes":{"reg":{"action":"register","parameters":{"label":"Copy","name":"Copy"},"sources":["append"]},"get_data":{"action":"dataset","parameters":{"name":"Copy"}},"get_data_dup":{"action":"dataset","parameters":{"name":"Copy"}},"append":{"action":"append","parameters":{"enableDisjointedSchemaMerge":false},"sources":["get_data","get_data_dup"]}}}
