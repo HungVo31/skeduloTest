@@ -1,0 +1,22 @@
+public with sharing class skeduloTest2 {
+
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> getContacts(String searchKey) {
+        String key = '%' + searchKey + '%';
+        return [
+            SELECT Id, Name, counter__c
+            FROM Contact
+            WHERE Name LIKE :key
+        ];
+    }
+    
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAccounts(String searchKey) {
+        String key = '%' + searchKey + '%';
+        return [
+            SELECT Id, Name, counter__c
+            FROM Account
+            WHERE Name LIKE :key
+        ];
+    }
+}

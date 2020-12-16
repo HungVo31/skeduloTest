@@ -8,16 +8,16 @@
     <div style="height: 300px;">
       <lightning-datatable
               key-field="cid"
-              data={contacts}
+              data={concatArray}
               columns={cColumns}
               onrowaction={handleRowAction}>
       </lightning-datatable>
-      <lightning-datatable
+      <!-- <lightning-datatable
               key-field="aid"
               data={accounts}
               columns={aColumns}
               onrowaction={handleRowAction}>
-      </lightning-datatable>
+      </lightning-datatable> -->
       <!-- <lightning-datatable
               key-field="cid"
               data={concatArray}

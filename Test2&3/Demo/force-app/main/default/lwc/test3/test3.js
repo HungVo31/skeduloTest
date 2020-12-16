@@ -17,7 +17,7 @@ const actions = [
 ];
 
 const cColumns = [
-  { label: 'Id', fieldName: 'cid' },
+  { label: 'Id', fieldName: 'id' },
   { label: 'Name', fieldName: 'Name' },
   { label: 'Record Type', fieldName: 'type' },
   { label: 'URL', fieldName: 'nameUrl', type: 'url' },
@@ -26,7 +26,7 @@ const cColumns = [
 ];
 
 const aColumns = [
-  { label: 'Id', fieldName: 'aid' },
+  { label: 'Id', fieldName: 'id' },
   { label: 'Name', fieldName: 'Name' },
   { label: 'Record Type', fieldName: 'type' },
   { label: 'URL', fieldName: 'nameUrl', type: 'url' },
@@ -44,20 +44,20 @@ export default class Test3 extends LightningElement {
 
   cColumns = cColumns;
   aColumns = aColumns;
-  // @track concatArray = [];
+  @track concatArray = [];
 
   @track contacts = [];
   @wire(getContacts, { searchKey: '$searchKey' })
   contactQueryResult(result) {
       const { data, error } = result;
       if(data) {
-          let nameUrl, cid, type, clickUpdate;
+          let nameUrl, id, type, clickUpdate;
           this.contacts = data.map(row => { 
               nameUrl = `${this.contactURL}${row.Id}/view`;
-              cid = `c${row.Id}`;
+              id = `c${row.Id}`;
               type = 'Contact';
               clickUpdate = 0;
-              return {...row , nameUrl, cid, type, clickUpdate} 
+              return {...row , nameUrl, id, type, clickUpdate} 
           })
           this.error = null;
       }
@@ -72,14 +72,15 @@ export default class Test3 extends LightningElement {
   accountQueryResult(result) {
       const { data, error } = result;
       if(data) {
-        let nameUrl, aid, type, clickUpdate;
+        let nameUrl, id, type, clickUpdate;
           this.accounts = data.map(row => { 
               nameUrl = `${this.accountURL}${row.Id}/view`;
-              aid = `a${row.Id}`;
+              id = `a${row.Id}`;
               type = 'Account';
               clickUpdate = 0;
-              return {...row , nameUrl, aid, type, clickUpdate} 
+              return {...row , nameUrl, id, type, clickUpdate} 
           })
+          this.concatArray = this.contacts.concat(this.accounts);
           this.error = null;
       }
       if(error) {
