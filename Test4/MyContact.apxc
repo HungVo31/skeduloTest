@@ -1,0 +1,15 @@
+global class MyContact {
+	global Id id;
+    global Boolean active;
+ 
+    public Contact getContact() {
+        Contact newContact = [
+            SELECT Name,Active__c
+            FROM Contact
+            WHERE Id = :this.id
+        ];
+        newContact.Active__c = this.active;
+
+        return newContact;
+    }
+}

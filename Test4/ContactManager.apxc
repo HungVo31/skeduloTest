@@ -1,0 +1,27 @@
+@RestResource(urlMapping='/mycontact/*')
+global with sharing class ContactManager {
+    @HttpGet
+    global static Contact getCaseById() {
+        // /services/apexrest/Contact/0032v00003gHYNcAAO
+        RestRequest request = RestContext.request;
+        // grab the caseId from the end of the URL
+        String contactId = request.requestURI.substring(
+          request.requestURI.lastIndexOf('/')+1);
+        Contact result =  [SELECT Name,Active__c
+                        FROM Contact
+                        WHERE Id = :contactId];
+        return result;
+    } 
+    @HttpPut
+    global static List<Id> upsertContact(List<MyContact> iContacts) {
+        Set<Contact> contactToUpdate = new Set<Contact>();
+        for(MyContact contactEle : iContacts) {
+            contactToUpdate.add(contactEle.getContact());
+        }
+        List<Contact> contactToUpdateList = new List<Contact>();
+        contactToUpdateList.addAll(contactToUpdate);
+        update contactToUpdateList;
+        Map<Id, Contact> contactMap = new Map<Id, Contact>(contactToUpdateList);
+    	return new List<Id>(contactMap.keySet());
+    }
+}

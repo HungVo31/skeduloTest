@@ -1,0 +1,11 @@
+Go to Salesforce workbench REST explorer: https://workbench.developerforce.com/restExplorer.php
+Choose PUT method
+Enter the following URL: /services/apexrest/mycontact/
+Set the request body as below:
+{
+    "iContacts" : [
+                   { "id" : "0032v00003gHYNcAAO", "active" : true},
+                   { "id" : "0032v00003gHZSCAA4", "active" : true}
+             ]
+}
+Press Execute button
